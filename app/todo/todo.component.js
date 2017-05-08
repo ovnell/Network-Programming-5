@@ -7,8 +7,12 @@
       })
     ];
 
+    function newTodo() {
+        return { text: "make a list", done: true };
+    }
+
     function TodoComponent() {
-        this.todo = [{ text: "make a list", done: false },
+        this.todo = [{ text: "make a list", done: true },
                        { text: "print the list", done: false },
                        { text: "add more functionality...", done: false }];
     }
