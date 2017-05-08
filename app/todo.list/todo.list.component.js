@@ -5,7 +5,7 @@
       selector: 'todo-list', 
       templateUrl: 'app/todo.list/todo.list.component.html', 
     }) 
-  ]; 
+  ];
 
   function TodoListComponent() { 
     this.myList = [{text: "make a list", done: true}, 

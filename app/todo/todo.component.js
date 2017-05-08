@@ -8,7 +8,8 @@
     ];
 
     function newTodo() {
-        return { text: "make a list", done: true };
+        console.log("newTodo");
+        //this.todo.push({ text: "make a list", done: true });
     }
 
     function TodoComponent() {

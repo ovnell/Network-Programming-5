@@ -13,7 +13,7 @@ AppModule.annotations = [
     declarations: [
       app.AppComponent,
       app.TodoListComponent,
-      app.TodoComponent
+      app.TodoComponent,
     ],
     providers: [
       app.DataService,
