@@ -1,0 +1,18 @@
+<div class="container well">
+  <h1>Things to do</h1>
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of myList" class="table-item">
+                <td>{{item.text}}</td>
+                <td *ngIf="item.done"><span class="glyphicon glyphicon-ok"></span></td>
+                <td *ngIf="item.done === false"><span class="glyphicon glyphicon-remove"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--<ul class="list-group">
+        <li *ngFor="let item of myList" class="list-group-item"> {{item.text}} </li>
+        <li *ngFor="let item of myList" class="list-group-item"> {{item.done}} </li>
+    </ul>-->
+</div>
