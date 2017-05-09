@@ -7,13 +7,13 @@
       })
     ];
 
-    function TodoComponent() {
-        this.todo = [{ text: "make a list", done: true },
-                       { text: "print the list", done: false },
-                       { text: "add more functionality...", done: false }];
+    TodoComponent.parameters = [app.DataService];
 
-        this.newTodo = function() {
-            this.todo.push({ text: "asdasd", done: false });
+    function TodoComponent(dataService) {
+        this.todo = { text: "make a list", done: true };
+
+        this.newTodo = function () {
+            dataService.addTodo(this.todo);
         };
     }
 

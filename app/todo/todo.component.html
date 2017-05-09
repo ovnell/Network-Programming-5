@@ -17,16 +17,5 @@
   </form>
 
   <!-- TODO remove debug print -->
-  <!--todo = {{todo|json}}-->
-   todo = <table class="table">
-        <thead>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of todo" class="table-item">
-                <td>{{item.text}}</td>
-                <td *ngIf="item.done"><span class="glyphicon glyphicon-ok"></span></td>
-                <td *ngIf="item.done === false"><span class="glyphicon glyphicon-remove"></span></td>
-            </tr>
-        </tbody>
-    </table>
+  todo = {{todo|json}}
 </div>
