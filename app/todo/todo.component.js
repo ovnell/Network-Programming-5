@@ -10,7 +10,7 @@
     TodoComponent.parameters = [app.DataService];
 
     function TodoComponent(dataService) {
-        this.todo = { text: "make a list", done: true };
+        this.todo = { text: "", done: false };
 
         this.newTodo = function () {
             dataService.addTodo(this.todo);
