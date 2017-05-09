@@ -19,6 +19,8 @@ AppModule.annotations = [
       app.DataService,
     ],
     bootstrap: [ app.AppComponent ]
+
+
   })
 ]
 

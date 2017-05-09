@@ -7,14 +7,14 @@
       })
     ];
 
-    function newTodo() {
-        console.log("newTodo");
-        //this.todo.push({ text: "make a list", done: true });
-    }
-
     function TodoComponent() {
         this.todo = [{ text: "make a list", done: true },
                        { text: "print the list", done: false },
                        { text: "add more functionality...", done: false }];
+
+        this.newTodo = function() {
+            this.todo.push({ text: "asdasd", done: false });
+        };
     }
+
 })(window.app = window.app || {});

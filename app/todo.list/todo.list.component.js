@@ -7,9 +7,10 @@
     }) 
   ];
 
-  function TodoListComponent() { 
-    this.myList = [{text: "make a list", done: true}, 
-                   {text: "print the list", done: false}, 
-                   {text: "add more functionality...", done: false}]; 
-  } 
+  TodoListComponent.parameters = [app.DataService];
+
+  function TodoListComponent(dataService) {
+      this.myList = dataService.getTODOs();
+  }
+
 })(window.app = window.app || {});
